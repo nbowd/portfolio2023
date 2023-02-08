@@ -9,9 +9,9 @@
 }
 
 :root{
-  --bg-color: #2a2a2a;
+  --bg-color: #fff;
   --second-bg-color: #202020;
-  --text-color: #fff;
+  --text-color: #202020;
   --second-color: #ccc;
   --main-color: #ff4d05;
   --big-font: 5rem;
@@ -25,7 +25,15 @@ body {
 }
 
 header {
- position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+header .mega-logo img {
+  width:100%;
+}
+
+header .navbar{
  width: 100%;
  top: 0;
  right: 0;
@@ -34,8 +42,9 @@ header {
  align-items: center;
  justify-content: space-between;
  background: transparent;
- padding: 22px 15%;
- border-bottom: 1px solid transparent;
+ padding: 6px;
+ /* border-bottom: 1px solid transparent; */
+ border: 2px solid black;
  transition: all .45s ease;
 }
 
@@ -44,6 +53,7 @@ header {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-left: 1rem;
 }
 
 .navlist {
@@ -51,9 +61,9 @@ header {
 }
 
 .navlist a{
-  color: var(--second-color);
+  color: black;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0 25px;
   transition: all .45s ease;
 }
@@ -84,14 +94,40 @@ section {
   height: 100vh;
   width: 100%;
   /* Might use a background image, placeholder for now */
-  background-image: url(./imgs/Neon_Beard_man_creating_planet_by_writing_code_on_his_laptop_on_8438d8e5-e301-4ca9-a880-933fe31189ac.png);
+  /* background-image: url(./imgs/Neon_Beard_man_creating_planet_by_writing_code_on_his_laptop_on_8438d8e5-e301-4ca9-a880-933fe31189ac.png);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
+.home-left {
+  background: #9c7bff;
+  border-right: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-right {
+  background: #50feb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-right img {
+  width: 65%;
+}
+.home-left, .home-right {
+  width: 50%;
+  min-width: 50%;
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
 .slide{ 
   margin-bottom: 20px;
 }
@@ -99,24 +135,24 @@ section {
 .one{
   display:inline-block;
   margin-right: 15px;
-  height: 32px;
+  height: 80px;
   padding: 0 15px;
-  line-height: 32px;
-  font-size: 20px;
+  line-height: 80px;
+  font-size: 80px;
   font-weight: 500;
   border-radius: 5px;
-  background: var(--main-color);
+  background: white;
   color: var(--text-color);
 }
 
 .two{
   display: inline-block;
-  color: var(--second-bg-color);
-  font-size: 20px;
+  color: var(--text-color);
+  font-size: 80px;
   font-weight: 500;
 }
 
-.home-text h1{
+.home-left h1{
   font-size: var(--big-font);
   font-weight: 700;
   color: var(--text-color);
@@ -124,7 +160,7 @@ section {
   margin: 0 0 8px;
 }
 
-.home-text h3{
+.home-left h3{
   color: var(--text-color);
   margin: 0 0 35px;
   font-size: 3rem;
@@ -132,11 +168,13 @@ section {
   line-height: 1.1;
 }
 
-.home-text p {
+.home-left p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 40px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .button{ 
@@ -159,6 +197,18 @@ section {
 
 .btn:hover {
   transform: scale(0.9);
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-img img{
@@ -416,7 +466,7 @@ form textarea {
 
 @media (max-width: 1480px) {
   header{
-    padding: 12px 2.5%;
+    /* padding: 12px 2.5%; */
     transition: .1s;
   }
 
@@ -426,7 +476,7 @@ form textarea {
   }
 
   section {
-    padding: 110px 3% 60px;
+    padding: 0;
   }
 
   .end{
