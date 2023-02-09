@@ -24,31 +24,29 @@ body {
   color: var(--text-color);
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-}
 .mega-logo {
   background-color: #202020;
 }
 
 .mega-logo img {
   width:100%;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
-header .navbar{
- width: 100%;
- top: 0;
- right: 0;
- z-index: 1000;
- display: flex;
- align-items: center;
- justify-content: space-between;
- background: transparent;
- padding: 6px;
- /* border-bottom: 1px solid transparent; */
- border: 2px solid black;
- transition: all .45s ease;
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 6px;
+  /* border-bottom: 1px solid transparent; */
+  border: 2px solid black;
+  transition: all 2s ease;
 }
 
 .logo{
@@ -105,9 +103,14 @@ section {
   justify-content: flex-start;
 }
 
+.nav-offset {
+  margin-top:4rem;
+}
+
 .home-left {
   background: #9c7bff;
   border-right: 2px solid black;
+  border-left: 2px solid black;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -120,6 +123,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-right: 2px solid black;
 }
 
 .home-right img {
@@ -207,7 +211,7 @@ section {
 .about {
   height: 100vh;
   width: 100%;
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   background-image: url(./imgs//shapes.png);
   background-size: cover;
   background-position: center;
@@ -246,9 +250,11 @@ section {
   margin-bottom: 4rem;
 }
 header.sticky {
+  position: fixed;
   background: var(--bg-color);
-  border-bottom: 1px solid #ffffff1a;
-  padding: 12px 15%;
+  border: 2px solid  black;
+  padding: 6px;
+  transition: all 2s ease;
 }
 
 .about {
@@ -278,6 +284,8 @@ header.sticky {
   padding: 40px 0 0 0;
   height: 100vh;
   border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
 .portfolio-content {
@@ -507,7 +515,7 @@ form textarea {
   }
 
   header.sticky {
-    padding: 10px 2.5%;
+    padding: 6px;
     transition: .1s;
   }
 

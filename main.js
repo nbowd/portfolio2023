@@ -1,9 +1,11 @@
 import './style.css'
 
-// const header = document.querySelector("header");
-// window.addEventListener("scroll", function() {
-//     header.classList.toggle("sticky", window.scrollY > 100)
-// })
+const header = document.querySelector("header");
+const home = document.querySelector(".home");
+window.addEventListener("scroll", function() {
+    header.classList.toggle("sticky", window.scrollY > 80)
+    home.classList.toggle("nav-offset", window.scrollY > 80)
+})
 
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
