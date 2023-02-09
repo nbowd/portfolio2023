@@ -9,7 +9,10 @@
     <link rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     >
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
@@ -82,8 +85,11 @@
         <h4>Creative Software Engineer</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
            Cumque laborum aut illo voluptates facere assumenda, dolores sint, placeat, asperiores magni libero delectus laboriosam ex enim accusantium sequi rem alias maxime.
+          <br>
+          <br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Cumque laborum aut illo voluptates facere assumenda, dolores sint, placeat, asperiores magni libero delectus laboriosam ex enim accusantium sequi rem alias maxime.
         </p>
-        <a href="#" class="btn">More About</a>
       </div>
     </section>
 
@@ -92,74 +98,69 @@
       <div class="main-text">
         <h2>Latest Projects</h2>
       </div>
-
-      <div class="portfolio-content">
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+      
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="portfolio-content">
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="portfolio-content">
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+              <div class="row">
+                <img src="imgs/BooknookThumb.png">
+                <div class="row-text">
+                  <h4>Project Name</h4>
+                  <h3>Small project description</h3>
+                </div>
+              </div>
+            </div>            
           </div>
         </div>
 
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="imgs/BooknookThumb.png">
-          <div class="layer">
-            <h5>Project Name</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem nam maiores commodi, consectetur 
-              libero esse soluta voluptatum.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
+
+      
     </section>
 
     <!-- Contact Section -->
@@ -206,6 +207,6 @@
 
     <!-- JS link -->
     <script type="module" src="/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

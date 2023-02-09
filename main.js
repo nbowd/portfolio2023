@@ -16,3 +16,19 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navlist.classList.remove('open')
 }
+
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+
+const nextSlide = document.querySelector('.swiper-button-next')
+const prevSlide = document.querySelector('.swiper-button-prev')
+
+nextSlide.onclick = () => {
+  swiper.slideNext();
+}
+
+prevSlide.onclick = () => {
+  swiper.slidePrev();
+}
