@@ -28,8 +28,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+.mega-logo {
+  background-color: #202020;
+}
 
-header .mega-logo img {
+.mega-logo img {
   width:100%;
 }
 
@@ -122,12 +125,14 @@ section {
 .home-right img {
   width: 65%;
 }
+
 .home-left, .home-right {
   width: 50%;
   min-width: 50%;
   height: 100vh;
   border-bottom: 2px solid black;
 }
+
 .slide{ 
   margin-bottom: 20px;
 }
@@ -203,6 +208,9 @@ section {
   height: 100vh;
   width: 100%;
   border-bottom: 2px solid black;
+  background-image: url(./imgs//shapes.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .about-img {
@@ -214,7 +222,7 @@ section {
 .about-img img{
   max-width: 530px;
   height: auto;
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
 }
 
@@ -263,6 +271,11 @@ header.sticky {
 .main-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
+}
+
+.portfolio {
+  background: #f8ff1e;
+  padding: 80px 15% 120px;
 }
 
 .portfolio-content {
