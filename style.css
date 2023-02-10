@@ -200,8 +200,11 @@ header {
 }
 
 .about {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -218,9 +221,11 @@ header {
 }
 
 .about-img img{
+  padding-left: 2rem;
+  padding-right: 2rem;
   max-width: 530px;
   height: auto;
-  width: 80%;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -588,6 +593,8 @@ form textarea {
   } */
   .about {
     grid-template-columns: 1fr;
+    padding: 2rem 2rem 0 2rem;
+    background: white;
   }
 
   .about-img {
@@ -596,7 +603,8 @@ form textarea {
   }
 
   .about-img img {
-    width: 100%;
+    padding-bottom: 5rem;
+    width: 60%;
     height: auto;
     max-width: 100%;
   }
@@ -636,6 +644,10 @@ form textarea {
   }
   .navlist.open {
     top: 100%;
+  }
+
+  .about-img img {
+    width: 70%;
   }
 }
 
@@ -680,6 +692,10 @@ form textarea {
     color: var(--text-color);
     font-size: 40px;
     font-weight: 500;
+  }
+
+  .about-img img {
+    width: 100%;
   }
 }
 
