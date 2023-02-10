@@ -1,10 +1,9 @@
 import './style.css'
 
 const header = document.querySelector("header");
-const home = document.querySelector(".home");
+
 window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", window.scrollY > 80)
-    home.classList.toggle("nav-offset", window.scrollY > 80)
 })
 
 let menu = document.querySelector('#menu-icon');
@@ -17,20 +16,4 @@ menu.onclick = () => {
 window.onscroll = () => {
     menu.classList.remove('bx-x');
     navlist.classList.remove('open')
-}
-
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-  });
-
-const nextSlide = document.querySelector('.swiper-button-next')
-const prevSlide = document.querySelector('.swiper-button-prev')
-
-nextSlide.onclick = () => {
-  swiper.slideNext();
-}
-
-prevSlide.onclick = () => {
-  swiper.slidePrev();
 }
