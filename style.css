@@ -608,6 +608,11 @@ form textarea {
     height: auto;
     max-width: 100%;
   }
+  
+  .portfolio-content {
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
 
   .contact {
     grid-template-columns: 1fr;
@@ -648,6 +653,12 @@ form textarea {
 
   .about-img img {
     width: 70%;
+  }
+  
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 
