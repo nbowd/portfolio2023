@@ -314,6 +314,7 @@ header.sticky {
   border-radius: 8px;
   display: block;
   transition: all .2s ease;
+  border: 2px solid black;
 }
 
 .row-text {
