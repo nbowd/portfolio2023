@@ -55,7 +55,7 @@ header {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .navlist {
@@ -70,7 +70,7 @@ header {
   transition: all .1s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
   font-weight: 800;
 }
 
@@ -315,6 +315,8 @@ header.sticky {
   display: block;
   transition: all .2s ease;
   border: 2px solid black;
+  background: white;
+
 }
 
 .row-text {
@@ -323,49 +325,6 @@ header.sticky {
 
 .row-text h3 {
   font-weight: 300;
-}
-
-.layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
-  position: absolute;
-  border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
-}
-
-.layer h5 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.layer p {
-  color: var(--second-color);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.layer i {
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background: var(--text-color);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
 }
 
 .row:hover img {
@@ -544,6 +503,122 @@ form textarea {
   border: 2px solid white;
 }
 
+.project-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #ff90e8;
+  background-image: url(/imgs/portfolio-item.png);
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.portfolio-item-individual {
+  width: 100%;
+}
+
+.portfolio-item-video{
+  width: 60%;
+  margin: 3rem auto 1.5rem auto;
+ }
+
+ .portfolio-item-video video {
+  width: 100%;
+  border: 2px solid black;
+  box-shadow: 10px 10px black;
+  border-radius: 8px;
+ }
+
+ .portfolio-item-video p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+ }
+
+ .portfolio-item-description {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+ }
+
+ .portfolio-item-description a i{
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 30px;
+  box-shadow: 4px 4px black;
+  transition: all .45s ease;
+ }
+
+ .portfolio-item-description a:hover i {
+  transform: scale(1.10);
+ }
+
+ .project-keywords {
+  margin-top: 1rem;
+  width: 100%;
+ }
+
+ .project-keywords label {
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: .25rem .5rem;
+  box-shadow: 4px 4px black;
+  margin-right: .75rem;
+  line-height: 50px;
+ }
+
+.project-intro h1 {
+  font-size: 80px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  height: 40vh;
+}
+
+.footer span {
+  font-size: 60px;
+}
+
+.footer-button {
+  font-size: 20px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all .45s ease;
+}
+
+.footer-button:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px white;
+}
+
+.footer-email {
+  color: white;
+  text-decoration: none;
+}
+.footer-email:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
 @media (max-width: 1480px) {
   header{
     transition: .1s;
@@ -641,6 +716,15 @@ form textarea {
     margin-right: 1rem;
     text-align: center;
   }
+
+  .portfolio-item-video, .portfolio-item-description {
+    width: 90%;
+  }
+
+  .footer {
+    height: 30vh;
+  }
+
 }
 
 @media (max-width: 840px) {
@@ -693,6 +777,12 @@ form textarea {
   .home-right img {
     width: 70%;
   }
+  .footer span {
+    font-size: 40px;
+  }
+  .footer-button {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 500px) { 
@@ -732,6 +822,11 @@ form textarea {
   .about-img img {
     width: 100%;
   }
+
+  .project-intro h1 {
+    font-size: 60px;
+  }
+
 }
 
 @media (max-width: 400px) { 
@@ -743,4 +838,9 @@ form textarea {
 .home-right img {
   width: 70%;
 }
+
+.footer span {
+  font-size: 30px;
+}
+
 }

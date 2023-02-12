@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Bowden Portfolio Website</title>
+    <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Nick</a>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About me</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact Me</a></li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- Introduction. -->
+    <section class="project-intro" id="home">
+      <!-- <img src="images/BooknookThumb.png" alt="Thumbnail for booknook application" class="intro-img" /> -->
+      <h1 class="project-title">
+        <strong>Marina API</strong>
+      </h1>
+      <p class="project-subtitle">Cloud API</p>
+    </section>
+
+    <div class="portfolio-item-individual">
+      <div class="portfolio-item-video">
+        <video class="portfolio__vid" src="./videos/CrowdFlowDemo.mov" onmouseover="this.play();" onmouseout="this.pause();"></video>
+        <p class="hover">Hover for video!</p>
+      </div>
+
+      <div class="portfolio-item-description">
+      <p>
+        <!-- <a class="portfolio__link" href="https://try-booknook.herokuapp.com/">Demo: <i class="fas fa-globe"></i></a> -->
+        <!-- <a class="portfolio__link" href="https://github.com/nbowd/booknook">Code: <i class="fas fa-code"></i></a> <br> -->
+        
+        <!-- <b>Note:</b> <i>Because this app is hosted on Heroku, it can take a few seconds to start. Once it is done 'spinning up' it should run smoothly. </i> -->
+      </p>
+      <a href="https://github.com/nbowd/CrowdFlow"><i class="bx bxl-github"></i></a>
+      <p>
+        This is an admin interface for a ticketing system. This was designed with a partner for my <i>Introduction to Databases</i> 
+        class at OSU. We worked together to craft a proposal for a mock product that would service a mid-size venue (~1500 seats) to
+         manage all of their data needs. This was accomplished by implementing a relational database after extensive group discussion 
+         and numerous peer reviews. This is an SQL MariaDB with multiple entities featuring various kinds of relationships.
+      </p>
+      <br>
+      <p>
+        Working on this project and the class itself was a wonderful experience. My partner and I were able to communicate effectively,
+         which allowed us to make great progress when we collaborating on a single problem or working asynchronously. It was very satisfying 
+         to take the seed of an idea, that was created in a brainstorming session, and grow it into a functioning application. 
+      </p>
+      <p class="project-keywords"> <label class="tag">SQL</label><wbr><label class="tag">Relational Database</label><wbr><label class="tag">Node.js</label><wbr><label class="tag">Express</label><wbr><label class="tag">MariaDB</label><wbr><label class="tag">Html/CSS</label><wbr><label class="tag">JavaScript</label></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>Like what you see?</span>
+        <a href="index.html#contact" class="footer-button">Message Me</a>
+        <a href="mailto:nickbwdn@gmail.com" class="footer-email">nickbwdn@gmail.com</a>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
