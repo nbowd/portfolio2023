@@ -458,6 +458,8 @@ form textarea {
   width: 160px;
   transition: all .45s ease;
   border: 2px solid black;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .contact-form .submit:hover {
