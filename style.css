@@ -108,6 +108,7 @@ header {
   justify-content: center;
 
 }
+
 .home-right {
   background: #50feb0;
   display: flex;
@@ -175,7 +176,7 @@ header {
 }
 
 .home-left p {
-  color: var(--second-color);
+  color: black;
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 40px;
@@ -249,12 +250,13 @@ header {
 }
 
 .about-text p {
-  color: var(--second-color);
+  color: black;
   font-size: var(--p-font);
   line-height: 1.8;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-right: 2rem;
 }
+
 header.sticky {
   position: fixed;
   background: var(--bg-color);
@@ -552,6 +554,7 @@ form textarea {
   border: 2px solid black;
   border-radius: 8px;
   margin-bottom: 1.5rem;
+  margin-right: .5rem;
   font-size: 30px;
   box-shadow: 4px 4px black;
   transition: all .45s ease;
